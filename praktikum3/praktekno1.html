@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>praktek 3 tes</title>
+    </head>
+    <script language="Javascript">
+        function tes() {
+        nilai = window.prompt("Nilai = ");
+        document.write("Nilai = ");
+        
+        if (nilai >0 && nilai <=40) {
+            document.write("E");
+        } else if (nilai >= 41 && nilai <=55) {
+            document.write("D")            
+        } else if (nilai >= 56 && nilai <=60) {
+            document.write("C")
+        } else if (nilai >= 61 && nilai <=65) {
+            document.write("BC")
+        } else if (nilai >= 66 && nilai <=70) {
+            document.write("B")
+        } else if (nilai >= 71 && nilai <=80) {
+            document.write("AB")
+        } else if (nilai >= 81 && nilai <=100) {
+            document.write("A")
+        } else {
+            document.write("Pilihan nilai harus antara 0 - 100 !, Silahkan Refresh Website Ini !")
+        }
+        
+    }
+    </script>
+    <body onload=tes()>
+        
+    </body>
+</html>
