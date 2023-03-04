@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>praktek 3 tes</title>
+    </head>
+    <script language="Javascript">
+        
+        function tes() {
+        //kami menggunakan window.prompt untuk memunculkan popup, guna untuk membuat inputan angka dari popup tersebut
+            nilai = window.prompt("Nilai = ");
+        //document.write guna untuk memunculkan kalimat di body html melalui body onload=tes(memanggil function)
+        document.write("Nilai = ");
+        
+        // variabel nilai dari inputan pada window prompot. akan menseleksi sendiri dengan menggunakan metode if else.
+        // jika user menginput angka 35, maka output akan muncul nilai E.
+        // namun jika user menginput angka 58. maka code akan menseleksi hingga menemukan nilai >= 56 && <= 60. begitu juga seterusnya
+        if (nilai >0 && nilai <=40) {
+            document.write("E");
+        } else if (nilai >= 41 && nilai <=55) {
+            document.write("D")            
+        } else if (nilai >= 56 && nilai <=60) {
+            document.write("C")
+        } else if (nilai >= 61 && nilai <=65) {
+            document.write("BC")
+        } else if (nilai >= 66 && nilai <=70) {
+            document.write("B")
+        } else if (nilai >= 71 && nilai <=80) {
+            document.write("AB")
+        } else if (nilai >= 81 && nilai <=100) {
+            document.write("A")
+        } else {
+            // jika user menginput nilai selain dari 0 - 100, misal 101. maka akan muncul kalimat seperti dibawah.
+            document.write("Pilihan nilai harus antara 0 - 100 !, Silahkan Refresh Website Ini !")
+        }
+        
+    }
+    </script>
+    <!--Body Html memanggil function Tes pada "javascript"-->
+    <body onload=tes()>
+        
+    </body>
+</html>
