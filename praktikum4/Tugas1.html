@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".sembunyikan").click(function(){
+                    $("#foto").hide("slow")
+                })
+                $(".tampilkan").click(function(){
+                    $("#foto").show("slow")
+                })
+                $(".sembunyikan1").click(function(){
+                    $("#foto1").hide("slow")
+                })
+                $(".tampilkan1").click(function(){
+                    $("#foto1").show("slow")
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <button class="sembunyikan">Sembunyikan</button>
+        <button class="tampilkan">Tampilkan</button> <br>
+        <br>
+        <button class="sembunyikan1">Sembunyikan</button>
+        <button class="tampilkan1">Tampilkan</button>
+        <P><img src="LogoUPN.png" id="foto"></P>
+        <p><img src="LOGOR.png" id="foto1"></p>
+    </body>
+</html>
